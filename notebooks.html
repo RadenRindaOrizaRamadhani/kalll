@@ -409,6 +409,38 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-4-hitung-matriks-adjoin"><strong>Langkah 4: Hitung Matriks Adjoin</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-5-hitung-invers-matriks"><strong>Langkah 5: Hitung Invers Matriks</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-6-verifikasi-dengan-perkalian-a-1-cdot-b"><strong>Langkah 6: Verifikasi dengan Perkalian <span class="math notranslate nohighlight">\(A^{-1} \cdot B\)</span></strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ringkasan-materi-matrix-transformations-halaman-225238"><strong>Ringkasan Materi: Matrix Transformations (Halaman 225–238)</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-transformasi-matriks"><strong>1. Definisi Transformasi Matriks</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-transformasi-matriks-di-mathbb-r-2"><strong>2. Contoh Transformasi Matriks di <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span></strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-rotasi-sebesar-theta-terhadap-titik-asal">a. <strong>Rotasi</strong> sebesar <span class="math notranslate nohighlight">\(\theta\)</span> terhadap titik asal:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-refleksi">b. <strong>Refleksi:</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#c-skala-stretching-compression">c. <strong>Skala (Stretching/Compression)</strong>:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-shear-geser">d. <strong>Shear (Geser)</strong>:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-transformasi-linear"><strong>3. Sifat-sifat Transformasi Linear</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#komposisi-transformasi"><strong>4. Komposisi Transformasi</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identitas-dan-matriks-nol"><strong>5. Identitas dan Matriks Nol</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#representasi-geometris"><strong>6. Representasi Geometris</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-terhadap-unit-square"><strong>7. Transformasi terhadap Unit Square</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-dan-area"><strong>8. Determinan dan Area</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#berikut-jawaban-soal-halaman-239-no-1-2-5-dan-6">Berikut jawaban soal halaman 239 no 1, 2, 5, dan 6:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-1"><strong>Nomor 1</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-hitung-a-vec-x">a) Hitung <span class="math notranslate nohighlight">\(A\vec{x}\)</span>:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-hitung-a-vec-y">b) Hitung <span class="math notranslate nohighlight">\(A\vec{y}\)</span>:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-2"><strong>Nomor 2</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">a) Hitung <span class="math notranslate nohighlight">\(A\vec{x}\)</span>:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">b) Hitung <span class="math notranslate nohighlight">\(A\vec{y}\)</span>:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-5"><strong>Nomor 5</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-6"><strong>Nomor 6</strong></a></li>
 </ul>
 </li>
 </ul>
@@ -637,6 +669,278 @@ A = \begin{bmatrix} 6 &amp; -3 &amp; -2 \\ 8 &amp; -5 &amp; -4 \\ 2 &amp; -7 &am
 \end{bmatrix}\)</span></p>
 <p>Karena nilai <span class="math notranslate nohighlight">\((-2.78 \times 10^{-16})\)</span> sangat kecil (hampir nol), maka hasilnya benar-benar <strong>(1,0,0)</strong>.</p>
 </section>
+<section id="ringkasan-materi-matrix-transformations-halaman-225238">
+<h2><strong>Ringkasan Materi: Matrix Transformations (Halaman 225–238)</strong><a class="headerlink" href="#ringkasan-materi-matrix-transformations-halaman-225238" title="Link to this heading">#</a></h2>
+<section id="definisi-transformasi-matriks">
+<h3><strong>1. Definisi Transformasi Matriks</strong><a class="headerlink" href="#definisi-transformasi-matriks" title="Link to this heading">#</a></h3>
+<p>Transformasi matriks adalah suatu fungsi linear <span class="math notranslate nohighlight">\(T: \mathbb{R}^n \to \mathbb{R}^m\)</span> yang dapat direpresentasikan sebagai perkalian matriks terhadap vektor:</p>
+<div class="math notranslate nohighlight">
+\[
+T(\vec{x}) = A\vec{x}
+\]</div>
+<p>di mana:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A\)</span> adalah matriks ukuran <span class="math notranslate nohighlight">\(m \times n\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\vec{x}\)</span> adalah vektor kolom di <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(T(\vec{x})\)</span> adalah hasil transformasi vektor di <span class="math notranslate nohighlight">\(\mathbb{R}^m\)</span>.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="contoh-transformasi-matriks-di-mathbb-r-2">
+<h3><strong>2. Contoh Transformasi Matriks di <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span></strong><a class="headerlink" href="#contoh-transformasi-matriks-di-mathbb-r-2" title="Link to this heading">#</a></h3>
+<p>Beberapa transformasi umum dalam <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> dapat direpresentasikan dengan matriks:</p>
+<section id="a-rotasi-sebesar-theta-terhadap-titik-asal">
+<h4>a. <strong>Rotasi</strong> sebesar <span class="math notranslate nohighlight">\(\theta\)</span> terhadap titik asal:<a class="headerlink" href="#a-rotasi-sebesar-theta-terhadap-titik-asal" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+R_\theta =
+\begin{bmatrix}
+\cos\theta &amp; -\sin\theta \\
+\sin\theta &amp; \cos\theta
+\end{bmatrix}
+\end{split}\]</div>
+</section>
+<section id="b-refleksi">
+<h4>b. <strong>Refleksi:</strong><a class="headerlink" href="#b-refleksi" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Refleksi terhadap sumbu-<span class="math notranslate nohighlight">\(x\)</span>:
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+1 &amp; 0 \\
+0 &amp; -1
+\end{bmatrix}
+\)</span>$</p></li>
+<li><p>Refleksi terhadap sumbu-<span class="math notranslate nohighlight">\(y\)</span>:
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+-1 &amp; 0 \\
+0 &amp; 1
+\end{bmatrix}
+\)</span>$</p></li>
+</ul>
+</section>
+<section id="c-skala-stretching-compression">
+<h4>c. <strong>Skala (Stretching/Compression)</strong>:<a class="headerlink" href="#c-skala-stretching-compression" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Horizontal:
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+k &amp; 0 \\
+0 &amp; 1
+\end{bmatrix}
+\)</span>$</p></li>
+<li><p>Vertikal:
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+1 &amp; 0 \\
+0 &amp; k
+\end{bmatrix}
+\)</span>$</p></li>
+</ul>
+</section>
+<section id="d-shear-geser">
+<h4>d. <strong>Shear (Geser)</strong>:<a class="headerlink" href="#d-shear-geser" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Horizontal:
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+1 &amp; k \\
+0 &amp; 1
+\end{bmatrix}
+\)</span>$</p></li>
+<li><p>Vertikal:
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+1 &amp; 0 \\
+k &amp; 1
+\end{bmatrix}
+\)</span>$</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="sifat-sifat-transformasi-linear">
+<h3><strong>3. Sifat-sifat Transformasi Linear</strong><a class="headerlink" href="#sifat-sifat-transformasi-linear" title="Link to this heading">#</a></h3>
+<p>Sebuah transformasi <span class="math notranslate nohighlight">\(T\)</span> dikatakan <strong>linear</strong> jika memenuhi dua sifat berikut:</p>
+<ol class="arabic simple">
+<li><p><strong>Preservasi penjumlahan</strong>:
+$<span class="math notranslate nohighlight">\(
+T(\vec{u} + \vec{v}) = T(\vec{u}) + T(\vec{v})
+\)</span>$</p></li>
+<li><p><strong>Preservasi perkalian skalar</strong>:
+$<span class="math notranslate nohighlight">\(
+T(c\vec{v}) = cT(\vec{v})
+\)</span>$</p></li>
+</ol>
+<p>Jika kedua sifat tersebut terpenuhi, maka <span class="math notranslate nohighlight">\(T\)</span> adalah <strong>transformasi linear</strong>, dan dapat direpresentasikan sebagai perkalian matriks.</p>
+</section>
+<hr class="docutils" />
+<section id="komposisi-transformasi">
+<h3><strong>4. Komposisi Transformasi</strong><a class="headerlink" href="#komposisi-transformasi" title="Link to this heading">#</a></h3>
+<p>Jika <span class="math notranslate nohighlight">\(T(\vec{x}) = A\vec{x}\)</span> dan <span class="math notranslate nohighlight">\(S(\vec{x}) = B\vec{x}\)</span>, maka komposisi <span class="math notranslate nohighlight">\(T \circ S\)</span> didefinisikan sebagai:</p>
+<div class="math notranslate nohighlight">
+\[
+T(S(\vec{x})) = A(B\vec{x}) = (AB)\vec{x}
+\]</div>
+<blockquote>
+<div><p><strong>Catatan penting:</strong> Perkalian matriks <strong>tidak komutatif</strong>, artinya <span class="math notranslate nohighlight">\(AB \ne BA\)</span>.</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="identitas-dan-matriks-nol">
+<h3><strong>5. Identitas dan Matriks Nol</strong><a class="headerlink" href="#identitas-dan-matriks-nol" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Matriks identitas</strong> <span class="math notranslate nohighlight">\(I\)</span> tidak mengubah vektor:
+$<span class="math notranslate nohighlight">\(
+I\vec{x} = \vec{x}
+\)</span>$</p></li>
+<li><p><strong>Matriks nol</strong> <span class="math notranslate nohighlight">\(0\)</span> mengirim semua vektor ke nol:
+$<span class="math notranslate nohighlight">\(
+0\vec{x} = \vec{0}
+\)</span>$</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="representasi-geometris">
+<h3><strong>6. Representasi Geometris</strong><a class="headerlink" href="#representasi-geometris" title="Link to this heading">#</a></h3>
+<p>Setiap matriks <span class="math notranslate nohighlight">\(2 \times 2\)</span> menentukan bagaimana vektor basis standar berubah. Misalnya:</p>
+<ul class="simple">
+<li><p>Jika:
+$<span class="math notranslate nohighlight">\(
+A = \begin{bmatrix}
+a &amp; b \\
+c &amp; d
+\end{bmatrix}
+\)</span>$</p></li>
+<li><p>Maka:
+$<span class="math notranslate nohighlight">\(
+A\vec{e}_1 = \begin{bmatrix} a \\ c \end{bmatrix}, \quad A\vec{e}_2 = \begin{bmatrix} b \\ d \end{bmatrix}
+\)</span>$</p></li>
+</ul>
+<p>Vektor hasil tersebut menunjukkan arah dan skala dari sumbu baru setelah transformasi.</p>
+</section>
+<hr class="docutils" />
+<section id="transformasi-terhadap-unit-square">
+<h3><strong>7. Transformasi terhadap Unit Square</strong><a class="headerlink" href="#transformasi-terhadap-unit-square" title="Link to this heading">#</a></h3>
+<p>Transformasi matriks terhadap <strong>unit square</strong> (persegi satuan) dapat divisualisasikan dengan melihat ke mana keempat titik sudut dikirim:</p>
+<ul class="simple">
+<li><p>Titik-titik unit square:
+$<span class="math notranslate nohighlight">\(
+(0, 0),\ (1, 0),\ (0, 1),\ (1, 1)
+\)</span>$</p></li>
+<li><p>Ditransformasi oleh <span class="math notranslate nohighlight">\(A\)</span> menjadi:
+$<span class="math notranslate nohighlight">\(
+A\begin{bmatrix}0\\0\end{bmatrix},\ A\begin{bmatrix}1\\0\end{bmatrix},\ A\begin{bmatrix}0\\1\end{bmatrix},\ A\begin{bmatrix}1\\1\end{bmatrix}
+\)</span>$</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="determinan-dan-area">
+<h3><strong>8. Determinan dan Area</strong><a class="headerlink" href="#determinan-dan-area" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Untuk matriks <span class="math notranslate nohighlight">\(2 \times 2\)</span>:
+$<span class="math notranslate nohighlight">\(
+\det(A) = ad - bc
+\)</span>$</p></li>
+<li><p>Nilai absolut determinan menggambarkan <strong>skala perubahan area</strong> setelah transformasi.</p></li>
+</ul>
+<hr class="docutils" />
+<section id="berikut-jawaban-soal-halaman-239-no-1-2-5-dan-6">
+<h4>Berikut jawaban soal halaman 239 no 1, 2, 5, dan 6:<a class="headerlink" href="#berikut-jawaban-soal-halaman-239-no-1-2-5-dan-6" title="Link to this heading">#</a></h4>
+</section>
+</section>
+</section>
+<section id="nomor-1">
+<h2><strong>Nomor 1</strong><a class="headerlink" href="#nomor-1" title="Link to this heading">#</a></h2>
+<p>Diberikan:</p>
+<p><span class="math notranslate nohighlight">\(A = \begin{bmatrix} 1 &amp; -1 \\ 2 &amp; 3 \end{bmatrix}, \quad
+\vec{x} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \quad
+\vec{y} = \begin{bmatrix} -1 \\ 2 \end{bmatrix}\)</span></p>
+<section id="a-hitung-a-vec-x">
+<h3>a) Hitung <span class="math notranslate nohighlight">\(A\vec{x}\)</span>:<a class="headerlink" href="#a-hitung-a-vec-x" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(A\vec{x} =
+\begin{bmatrix}
+1 &amp; -1 \\
+2 &amp; 3
+\end{bmatrix}
+\begin{bmatrix}
+1 \\1\end{bmatrix}=
+\begin{bmatrix}
+0 \\
+5
+\end{bmatrix}\)</span></p>
+</section>
+<section id="b-hitung-a-vec-y">
+<h3>b) Hitung <span class="math notranslate nohighlight">\(A\vec{y}\)</span>:<a class="headerlink" href="#b-hitung-a-vec-y" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(A\vec{y} =
+\begin{bmatrix}
+1 &amp; -1 \\
+2 &amp; 3
+\end{bmatrix}
+\begin{bmatrix}
+-1 \\2\end{bmatrix}=
+\begin{bmatrix}
+-3 \\
+4
+\end{bmatrix}\)</span></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="nomor-2">
+<h2><strong>Nomor 2</strong><a class="headerlink" href="#nomor-2" title="Link to this heading">#</a></h2>
+<p>Diberikan:</p>
+<p><span class="math notranslate nohighlight">\(A = \begin{bmatrix} 2 &amp; 0 \\ -1 &amp; 3 \end{bmatrix}, \quad
+\vec{x} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \quad
+\vec{y} = \begin{bmatrix} -1 \\ 2 \end{bmatrix}\)</span></p>
+<section id="id3">
+<h3>a) Hitung <span class="math notranslate nohighlight">\(A\vec{x}\)</span>:<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(A\vec{x} =
+\begin{bmatrix}
+2 \\
+2
+\end{bmatrix}\)</span></p>
+</section>
+<section id="id4">
+<h3>b) Hitung <span class="math notranslate nohighlight">\(A\vec{y}\)</span>:<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(A\vec{y} =
+\begin{bmatrix}
+-2 \\
+7
+\end{bmatrix}\)</span></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="nomor-5">
+<h2><strong>Nomor 5</strong><a class="headerlink" href="#nomor-5" title="Link to this heading">#</a></h2>
+<p>Berdasarkan gambar (transformasi terhadap unit square), tebak matriks transformasi ( A ).</p>
+<p>Misal dari gambar terlihat bahwa:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\vec{e}_1 = (1, 0) \rightarrow (2, 1)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\vec{e}_2 = (0, 1) \rightarrow (1, 3)\)</span></p></li>
+</ul>
+<p>Maka matriksnya:</p>
+<p><span class="math notranslate nohighlight">\(A = \begin{bmatrix}
+2 &amp; 1 \\
+1 &amp; 3
+\end{bmatrix}\)</span></p>
+<blockquote>
+<div><p>Jika gambarnya berbeda, tinggal sesuaikan hasil transformasi <span class="math notranslate nohighlight">\(\vec{e}_1 \) dan \( \vec{e}_2\)</span>.</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="nomor-6">
+<h2><strong>Nomor 6</strong><a class="headerlink" href="#nomor-6" title="Link to this heading">#</a></h2>
+<p>Jika transformasi yang terjadi adalah <strong>rotasi <span class="math notranslate nohighlight">\(90^\circ\)</span></strong> berlawanan arah jarum jam, maka:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\((1, 0) \rightarrow (0, 1)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\((0, 1) \rightarrow (-1, 0)\)</span></p></li>
+</ul>
+<p>Sehingga matriks transformasi:</p>
+<p><span class="math notranslate nohighlight">\(A = \begin{bmatrix}
+0 &amp; -1 \\
+1 &amp; 0
+\end{bmatrix}\)</span></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -725,6 +1029,38 @@ A = \begin{bmatrix} 6 &amp; -3 &amp; -2 \\ 8 &amp; -5 &amp; -4 \\ 2 &amp; -7 &am
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-4-hitung-matriks-adjoin"><strong>Langkah 4: Hitung Matriks Adjoin</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-5-hitung-invers-matriks"><strong>Langkah 5: Hitung Invers Matriks</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-6-verifikasi-dengan-perkalian-a-1-cdot-b"><strong>Langkah 6: Verifikasi dengan Perkalian <span class="math notranslate nohighlight">\(A^{-1} \cdot B\)</span></strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ringkasan-materi-matrix-transformations-halaman-225238"><strong>Ringkasan Materi: Matrix Transformations (Halaman 225–238)</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-transformasi-matriks"><strong>1. Definisi Transformasi Matriks</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-transformasi-matriks-di-mathbb-r-2"><strong>2. Contoh Transformasi Matriks di <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span></strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-rotasi-sebesar-theta-terhadap-titik-asal">a. <strong>Rotasi</strong> sebesar <span class="math notranslate nohighlight">\(\theta\)</span> terhadap titik asal:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-refleksi">b. <strong>Refleksi:</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#c-skala-stretching-compression">c. <strong>Skala (Stretching/Compression)</strong>:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-shear-geser">d. <strong>Shear (Geser)</strong>:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-sifat-transformasi-linear"><strong>3. Sifat-sifat Transformasi Linear</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#komposisi-transformasi"><strong>4. Komposisi Transformasi</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identitas-dan-matriks-nol"><strong>5. Identitas dan Matriks Nol</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#representasi-geometris"><strong>6. Representasi Geometris</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-terhadap-unit-square"><strong>7. Transformasi terhadap Unit Square</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-dan-area"><strong>8. Determinan dan Area</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#berikut-jawaban-soal-halaman-239-no-1-2-5-dan-6">Berikut jawaban soal halaman 239 no 1, 2, 5, dan 6:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-1"><strong>Nomor 1</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-hitung-a-vec-x">a) Hitung <span class="math notranslate nohighlight">\(A\vec{x}\)</span>:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-hitung-a-vec-y">b) Hitung <span class="math notranslate nohighlight">\(A\vec{y}\)</span>:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-2"><strong>Nomor 2</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">a) Hitung <span class="math notranslate nohighlight">\(A\vec{x}\)</span>:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">b) Hitung <span class="math notranslate nohighlight">\(A\vec{y}\)</span>:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-5"><strong>Nomor 5</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-6"><strong>Nomor 6</strong></a></li>
 </ul>
 </li>
 </ul>
