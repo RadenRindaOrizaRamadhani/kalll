@@ -674,10 +674,7 @@ A = \begin{bmatrix} 6 &amp; -3 &amp; -2 \\ 8 &amp; -5 &amp; -4 \\ 2 &amp; -7 &am
 <section id="definisi-transformasi-matriks">
 <h3><strong>1. Definisi Transformasi Matriks</strong><a class="headerlink" href="#definisi-transformasi-matriks" title="Link to this heading">#</a></h3>
 <p>Transformasi matriks adalah suatu fungsi linear <span class="math notranslate nohighlight">\(T: \mathbb{R}^n \to \mathbb{R}^m\)</span> yang dapat direpresentasikan sebagai perkalian matriks terhadap vektor:</p>
-<div class="math notranslate nohighlight">
-\[
-T(\vec{x}) = A\vec{x}
-\]</div>
+<p><span class="math notranslate nohighlight">\(T(\vec{x}) = A\vec{x}\)</span></p>
 <p>di mana:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(A\)</span> adalah matriks ukuran <span class="math notranslate nohighlight">\(m \times n\)</span>,</p></li>
@@ -691,70 +688,61 @@ T(\vec{x}) = A\vec{x}
 <p>Beberapa transformasi umum dalam <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> dapat direpresentasikan dengan matriks:</p>
 <section id="a-rotasi-sebesar-theta-terhadap-titik-asal">
 <h4>a. <strong>Rotasi</strong> sebesar <span class="math notranslate nohighlight">\(\theta\)</span> terhadap titik asal:<a class="headerlink" href="#a-rotasi-sebesar-theta-terhadap-titik-asal" title="Link to this heading">#</a></h4>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-R_\theta =
+<p><span class="math notranslate nohighlight">\(R_\theta =
 \begin{bmatrix}
 \cos\theta &amp; -\sin\theta \\
 \sin\theta &amp; \cos\theta
-\end{bmatrix}
-\end{split}\]</div>
+\end{bmatrix}\)</span></p>
 </section>
 <section id="b-refleksi">
 <h4>b. <strong>Refleksi:</strong><a class="headerlink" href="#b-refleksi" title="Link to this heading">#</a></h4>
-<ul class="simple">
-<li><p>Refleksi terhadap sumbu-<span class="math notranslate nohighlight">\(x\)</span>:
-$<span class="math notranslate nohighlight">\(
-\begin{bmatrix}
+<ul>
+<li><p>Refleksi terhadap sumbu-<span class="math notranslate nohighlight">\(x\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
 1 &amp; 0 \\
 0 &amp; -1
-\end{bmatrix}
-\)</span>$</p></li>
-<li><p>Refleksi terhadap sumbu-<span class="math notranslate nohighlight">\(y\)</span>:
-$<span class="math notranslate nohighlight">\(
-\begin{bmatrix}
+\end{bmatrix}\)</span></p>
+</li>
+<li><p>Refleksi terhadap sumbu-<span class="math notranslate nohighlight">\(y\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
 -1 &amp; 0 \\
 0 &amp; 1
-\end{bmatrix}
-\)</span>$</p></li>
+\end{bmatrix}\)</span></p>
+</li>
 </ul>
 </section>
 <section id="c-skala-stretching-compression">
 <h4>c. <strong>Skala (Stretching/Compression)</strong>:<a class="headerlink" href="#c-skala-stretching-compression" title="Link to this heading">#</a></h4>
-<ul class="simple">
-<li><p>Horizontal:
-$<span class="math notranslate nohighlight">\(
-\begin{bmatrix}
+<ul>
+<li><p>Horizontal:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
 k &amp; 0 \\
 0 &amp; 1
-\end{bmatrix}
-\)</span>$</p></li>
-<li><p>Vertikal:
-$<span class="math notranslate nohighlight">\(
-\begin{bmatrix}
+\end{bmatrix}\)</span></p>
+</li>
+<li><p>Vertikal:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
 1 &amp; 0 \\
 0 &amp; k
-\end{bmatrix}
-\)</span>$</p></li>
+\end{bmatrix}\)</span></p>
+</li>
 </ul>
 </section>
 <section id="d-shear-geser">
 <h4>d. <strong>Shear (Geser)</strong>:<a class="headerlink" href="#d-shear-geser" title="Link to this heading">#</a></h4>
-<ul class="simple">
-<li><p>Horizontal:
-$<span class="math notranslate nohighlight">\(
-\begin{bmatrix}
+<ul>
+<li><p>Horizontal:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
 1 &amp; k \\
 0 &amp; 1
-\end{bmatrix}
-\)</span>$</p></li>
-<li><p>Vertikal:
-$<span class="math notranslate nohighlight">\(
-\begin{bmatrix}
+\end{bmatrix}\)</span></p>
+</li>
+<li><p>Vertikal:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
 1 &amp; 0 \\
 k &amp; 1
-\end{bmatrix}
-\)</span>$</p></li>
+\end{bmatrix}\)</span></p>
+</li>
 </ul>
 </section>
 </section>
@@ -764,13 +752,9 @@ k &amp; 1
 <p>Sebuah transformasi <span class="math notranslate nohighlight">\(T\)</span> dikatakan <strong>linear</strong> jika memenuhi dua sifat berikut:</p>
 <ol class="arabic simple">
 <li><p><strong>Preservasi penjumlahan</strong>:
-$<span class="math notranslate nohighlight">\(
-T(\vec{u} + \vec{v}) = T(\vec{u}) + T(\vec{v})
-\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(T(\vec{u} + \vec{v}) = T(\vec{u}) + T(\vec{v})\)</span></p></li>
 <li><p><strong>Preservasi perkalian skalar</strong>:
-$<span class="math notranslate nohighlight">\(
-T(c\vec{v}) = cT(\vec{v})
-\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(T(c\vec{v}) = cT(\vec{v})\)</span></p></li>
 </ol>
 <p>Jika kedua sifat tersebut terpenuhi, maka <span class="math notranslate nohighlight">\(T\)</span> adalah <strong>transformasi linear</strong>, dan dapat direpresentasikan sebagai perkalian matriks.</p>
 </section>
@@ -778,10 +762,7 @@ T(c\vec{v}) = cT(\vec{v})
 <section id="komposisi-transformasi">
 <h3><strong>4. Komposisi Transformasi</strong><a class="headerlink" href="#komposisi-transformasi" title="Link to this heading">#</a></h3>
 <p>Jika <span class="math notranslate nohighlight">\(T(\vec{x}) = A\vec{x}\)</span> dan <span class="math notranslate nohighlight">\(S(\vec{x}) = B\vec{x}\)</span>, maka komposisi <span class="math notranslate nohighlight">\(T \circ S\)</span> didefinisikan sebagai:</p>
-<div class="math notranslate nohighlight">
-\[
-T(S(\vec{x})) = A(B\vec{x}) = (AB)\vec{x}
-\]</div>
+<p><span class="math notranslate nohighlight">\(T(S(\vec{x})) = A(B\vec{x}) = (AB)\vec{x}\)</span></p>
 <blockquote>
 <div><p><strong>Catatan penting:</strong> Perkalian matriks <strong>tidak komutatif</strong>, artinya <span class="math notranslate nohighlight">\(AB \ne BA\)</span>.</p>
 </div></blockquote>
@@ -791,31 +772,23 @@ T(S(\vec{x})) = A(B\vec{x}) = (AB)\vec{x}
 <h3><strong>5. Identitas dan Matriks Nol</strong><a class="headerlink" href="#identitas-dan-matriks-nol" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>Matriks identitas</strong> <span class="math notranslate nohighlight">\(I\)</span> tidak mengubah vektor:
-$<span class="math notranslate nohighlight">\(
-I\vec{x} = \vec{x}
-\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(I\vec{x} = \vec{x}\)</span></p></li>
 <li><p><strong>Matriks nol</strong> <span class="math notranslate nohighlight">\(0\)</span> mengirim semua vektor ke nol:
-$<span class="math notranslate nohighlight">\(
-0\vec{x} = \vec{0}
-\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(0\vec{x} = \vec{0}\)</span></p></li>
 </ul>
 </section>
 <hr class="docutils" />
 <section id="representasi-geometris">
 <h3><strong>6. Representasi Geometris</strong><a class="headerlink" href="#representasi-geometris" title="Link to this heading">#</a></h3>
-<p>Setiap matriks <span class="math notranslate nohighlight">\(2 \times 2\)</span> menentukan bagaimana vektor basis standar berubah. Misalnya:</p>
+<p>Setiap matriks <span class="math notranslate nohighlight">\(2\times2\)</span> menentukan bagaimana vektor basis standar berubah. Misalnya:</p>
 <ul class="simple">
 <li><p>Jika:
-$<span class="math notranslate nohighlight">\(
-A = \begin{bmatrix}
+<span class="math notranslate nohighlight">\(A = \begin{bmatrix}
 a &amp; b \\
 c &amp; d
-\end{bmatrix}
-\)</span>$</p></li>
+\end{bmatrix}\)</span></p></li>
 <li><p>Maka:
-$<span class="math notranslate nohighlight">\(
-A\vec{e}_1 = \begin{bmatrix} a \\ c \end{bmatrix}, \quad A\vec{e}_2 = \begin{bmatrix} b \\ d \end{bmatrix}
-\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(A\vec{e}_1 = \begin{bmatrix} a \\ c \end{bmatrix}, \quad A\vec{e}_2 = \begin{bmatrix} b \\ d \end{bmatrix}\)</span></p></li>
 </ul>
 <p>Vektor hasil tersebut menunjukkan arah dan skala dari sumbu baru setelah transformasi.</p>
 </section>
@@ -825,13 +798,9 @@ A\vec{e}_1 = \begin{bmatrix} a \\ c \end{bmatrix}, \quad A\vec{e}_2 = \begin{bma
 <p>Transformasi matriks terhadap <strong>unit square</strong> (persegi satuan) dapat divisualisasikan dengan melihat ke mana keempat titik sudut dikirim:</p>
 <ul class="simple">
 <li><p>Titik-titik unit square:
-$<span class="math notranslate nohighlight">\(
-(0, 0),\ (1, 0),\ (0, 1),\ (1, 1)
-\)</span>$</p></li>
+<span class="math notranslate nohighlight">\((0, 0),\ (1, 0),\ (0, 1),\ (1, 1)\)</span></p></li>
 <li><p>Ditransformasi oleh <span class="math notranslate nohighlight">\(A\)</span> menjadi:
-$<span class="math notranslate nohighlight">\(
-A\begin{bmatrix}0\\0\end{bmatrix},\ A\begin{bmatrix}1\\0\end{bmatrix},\ A\begin{bmatrix}0\\1\end{bmatrix},\ A\begin{bmatrix}1\\1\end{bmatrix}
-\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(A\begin{bmatrix}0\\0\end{bmatrix},\ A\begin{bmatrix}1\\0\end{bmatrix},\ A\begin{bmatrix}0\\1\end{bmatrix},\ A\begin{bmatrix}1\\1\end{bmatrix}\)</span></p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -839,9 +808,7 @@ A\begin{bmatrix}0\\0\end{bmatrix},\ A\begin{bmatrix}1\\0\end{bmatrix},\ A\begin{
 <h3><strong>8. Determinan dan Area</strong><a class="headerlink" href="#determinan-dan-area" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Untuk matriks <span class="math notranslate nohighlight">\(2 \times 2\)</span>:
-$<span class="math notranslate nohighlight">\(
-\det(A) = ad - bc
-\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(\det(A) = ad - bc\)</span></p></li>
 <li><p>Nilai absolut determinan menggambarkan <strong>skala perubahan area</strong> setelah transformasi.</p></li>
 </ul>
 <hr class="docutils" />
@@ -923,6 +890,9 @@ $<span class="math notranslate nohighlight">\(
 2 &amp; 1 \\
 1 &amp; 3
 \end{bmatrix}\)</span></p>
+<blockquote>
+<div><p>Jika gambarnya berbeda, tinggal sesuaikan hasil transformasi <span class="math notranslate nohighlight">\(\vec{e}_1 \) dan \( \vec{e}_2\)</span>.</p>
+</div></blockquote>
 </section>
 <hr class="docutils" />
 <section id="nomor-6">
