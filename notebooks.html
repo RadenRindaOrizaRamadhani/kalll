@@ -441,6 +441,8 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-5"><strong>Nomor 5</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-6"><strong>Nomor 6</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-1">Tugas 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-2">Tugas 2</a></li>
 </ul>
 </li>
 </ul>
@@ -908,6 +910,110 @@ c &amp; d
 1 &amp; 0
 \end{bmatrix}\)</span></p>
 </section>
+<section id="tugas-1">
+<h2>Tugas 1<a class="headerlink" href="#tugas-1" title="Link to this heading">#</a></h2>
+<p>Misalkan <span class="math notranslate nohighlight">\(T: \mathbb{R}^2 \to \mathbb{R}^2\)</span> didefinisikan oleh</p>
+<p><span class="math notranslate nohighlight">\(T(v_1, v_2) = (v_1 + v_2, v_1)\)</span></p>
+<p>Kita ingin membuktikan bahwa ( T ) adalah transformasi linier, yaitu memenuhi:</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(T(c\mathbf{u}) = cT(\mathbf{u})\)</span></p></li>
+</ol>
+<p>dengan <span class="math notranslate nohighlight">\(\mathbf{u}, \mathbf{v} \in \mathbb{R}^2 \) dan \( c \in \mathbb{R}\)</span>.</p>
+<hr class="docutils" />
+<p><strong>1. Pemeriksaan adisi</strong></p>
+<p>Misalkan</p>
+<p><span class="math notranslate nohighlight">\(\mathbf{u} = (u_1, u_2), \quad \mathbf{v} = (v_1, v_2)\)</span></p>
+<p>maka</p>
+<p><span class="math notranslate nohighlight">\(\mathbf{u} + \mathbf{v} = (u_1 + v_1, u_2 + v_2)\)</span></p>
+<p>Hitung <span class="math notranslate nohighlight">\(T(\mathbf{u} + \mathbf{v})\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(T(\mathbf{u} + \mathbf{v})\)</span> = <span class="math notranslate nohighlight">\(T(u_1 + v_1, u_2 + v_2)\)</span> = <span class="math notranslate nohighlight">\(((u_1 + v_1) + (u_2 + v_2), u_1 +v_1)\)</span>
+= <span class="math notranslate nohighlight">\((u_1 + u_2 + v_1 + v_2, u_1 + v_1)\)</span></p>
+<p>Hitung <span class="math notranslate nohighlight">\(T(\mathbf{u}) + T(\mathbf{v})\)</span> :</p>
+<p><span class="math notranslate nohighlight">\(T(\mathbf{u}) = (u_1 + u_2, u_1)\)</span></p>
+<p><span class="math notranslate nohighlight">\(T(\mathbf{v}) = (v_1 + v_2, v_1)\)</span></p>
+<p><span class="math notranslate nohighlight">\(T(\mathbf{u}) + T(\mathbf{v}) = (u_1 + u_2 + v_1 + v_2, u_1 + v_1)\)</span></p>
+<p>Maka</p>
+<p><span class="math notranslate nohighlight">\(T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})\)</span></p>
+<p>Syarat adisi terpenuhi.</p>
+<p><strong>2. Pemeriksaan homogenitas</strong></p>
+<p>Ambil <span class="math notranslate nohighlight">\(c \in \mathbb{R}\)</span> , maka</p>
+<p><span class="math notranslate nohighlight">\(c\mathbf{u} = (cu_1, cu_2)\)</span></p>
+<p>Hitung <span class="math notranslate nohighlight">\(T(c\mathbf{u})\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(T(c\mathbf{u}) = T(cu_1, cu_2) = (cu_1 + cu_2, cu_1)\)</span></p>
+<p><span class="math notranslate nohighlight">\(= c(u_1 + u_2, u_1)\)</span></p>
+<p>Di sisi lain:</p>
+<p><span class="math notranslate nohighlight">\(cT(\mathbf{u}) = c(u_1 + u_2, u_1) = (c(u_1 + u_2), cu_1)\)</span></p>
+<p>Maka</p>
+<p><span class="math notranslate nohighlight">\(T(c\mathbf{u}) = cT(\mathbf{u})\)</span></p>
+<p>Syarat homogenitas terpenuhi.</p>
+<p><strong>Kesimpulan</strong></p>
+<p>Karena kedua syarat terpenuhi, maka:</p>
+<p><span class="math notranslate nohighlight">\(\boxed{T \text{ adalah transformasi linier}}\)</span></p>
+</section>
+<section id="tugas-2">
+<h2>Tugas 2<a class="headerlink" href="#tugas-2" title="Link to this heading">#</a></h2>
+<p><strong>1. Reflection about the x-axis</strong></p>
+<p>Matriks:
+<span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; 0 \\
+0 &amp; -1
+\end{bmatrix}\)</span></p>
+<p>Transformasi: <span class="math notranslate nohighlight">\((x, y) \to (x, -y)\)</span></p>
+<p>Contoh:
+<span class="math notranslate nohighlight">\((2, 3) \to (2, -3)\)</span>
+<span class="math notranslate nohighlight">\((-1, 5) \to (-1, -5)\)</span>
+Berikut tampilan geogebra nya:</p>
+<iframe scrolling="no" title="contoh1" src="https://www.geogebra.org/material/iframe/id/bwspafw2/width/1280/height/537/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="537px" style="border:0px;"> </iframe>
+<p><strong>2. Reflection about the y-axis</strong></p>
+<p>Matriks:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+-1 &amp; 0 \\
+0 &amp; 1
+\end{bmatrix}\)</span></p>
+<p>Transformasi: <span class="math notranslate nohighlight">\((x, y) \to (-x, y)\)</span></p>
+<p>Contoh:
+<span class="math notranslate nohighlight">\((4, -2) \to (-4, -2)\)</span></p>
+<p><span class="math notranslate nohighlight">\((1, 7) \to (-1, 7)\)</span>
+Berikut tampilan geogebra nya:</p>
+<iframe scrolling="no" title="contoh2" src="https://www.geogebra.org/material/iframe/id/zrytzhwr/width/1280/height/537/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="537px" style="border:0px;"> </iframe>
+<p><strong>3. Reflection about the line ( y = x )</strong></p>
+<p>Matriks:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+0 &amp; 1 \\
+1 &amp; 0
+\end{bmatrix}\)</span></p>
+<p>Transformasi:  <span class="math notranslate nohighlight">\((x, y) \to (y, x)\)</span></p>
+<p>Contoh
+<span class="math notranslate nohighlight">\((5, 2) \to (2, 5)\)</span></p>
+<p><span class="math notranslate nohighlight">\((-3, 7) \to (7, -3)\)</span></p>
+<p>Berikut tampilan geogebra nya:</p>
+<iframe scrolling="no" title="Contoh3" src="https://www.geogebra.org/material/iframe/id/fhgnc9v8/width/1280/height/537/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="537px" style="border:0px;"> </iframe>
+<p><strong>4. Reflection about the line ( y = -x )</strong></p>
+<p>Matriks:
+<span class="math notranslate nohighlight">\(\begin{bmatrix}
+0 &amp; -1 \\
+-1 &amp; 0
+\end{bmatrix}\)</span></p>
+<p>Transformasi: <span class="math notranslate nohighlight">\((x, y) \to (-y, -x)\)</span></p>
+<p>Contoh:</p>
+<p><span class="math notranslate nohighlight">\((3, 4) \to (-4, -3)\)</span></p>
+<p><span class="math notranslate nohighlight">\((-5, 1) \to (-1, 5)\)</span>
+Berikut tampilan geogebra nya:</p>
+<iframe scrolling="no" title="CONTOH4" src="https://www.geogebra.org/material/iframe/id/tg2prqzh/width/1280/height/537/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="537px" style="border:0px;"> </iframe>
+<p><strong>5. Reflection about the origin</strong></p>
+<p>Matriks:
+<span class="math notranslate nohighlight">\(\begin{bmatrix}
+-1 &amp; 0 \\
+0 &amp; -1
+\end{bmatrix}\)</span></p>
+<p>Transformasi: <span class="math notranslate nohighlight">\((x, y) \to (-x, -y)\)</span></p>
+<p>Contoh:</p>
+<p><span class="math notranslate nohighlight">\((2, -6) \to (-2, 6)\)</span></p>
+<p><span class="math notranslate nohighlight">\((-4, 3) \to (4, -3)\)</span></p>
+<p>Berikut tampilan geogebra nya:</p>
+<iframe scrolling="no" title="CONTOH5" src="https://www.geogebra.org/material/iframe/id/mbg9mjjz/width/1280/height/537/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="537px" style="border:0px;"> </iframe>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1028,6 +1134,8 @@ c &amp; d
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-5"><strong>Nomor 5</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nomor-6"><strong>Nomor 6</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-1">Tugas 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-2">Tugas 2</a></li>
 </ul>
 </li>
 </ul>
